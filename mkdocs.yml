@@ -1,0 +1,77 @@
+site_name: highlighter's blog
+site_author: "highlighter_math"
+theme:
+  name: material
+  language: ja
+  palette:
+    primary: teal
+  features:
+    - navigation.tabs
+markdown_extensions:
+  - admonition
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: "ret2home"
+      repo: blog
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js
+
+extra:
+  search:
+    language: 'jp'
+extra_css:
+  - assets/extra.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css
+nav:
+  - Home: index.md
+  #- 競プロ:
+  #- 業プロ:
+  - 数学:
+    - 数オリ精進:
+      - USAMO:
+        - 2023:
+          - P1: math/olympic/usamo/2023-1.md
+        - 2024:
+          - P1: math/olympic/usamo/2024-1.md
+      - USA TSTST:
+        - junbi.md
+      - USA TST:
+        - junbi.md
+      - USEMO:
+        - junbi.md
+  #- その他:
