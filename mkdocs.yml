@@ -1,4 +1,7 @@
 site_name: highlighter's blog
+site_url: https://highlighter-math.github.io/
+repo_url: https://github.com/highlighter-math/highlighter-math.github.io/
+repo_name: highlighter-math/highlighter-math.gitub.io
 site_author: "highlighter_math"
 theme:
   name: material
